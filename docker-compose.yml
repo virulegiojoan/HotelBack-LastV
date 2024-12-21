@@ -1,0 +1,22 @@
+services:
+  api-hotel:
+    container_name: api-hotel
+    build: ./api-hotel
+    image: api-hotel
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./api-hotel/.env:/index/.env
+
+  cup-db:
+    container_name: cup-db
+    restart: always
+    image: postgres:14.6
+    ports:
+      - "5577:5432"
+    volumes:
+      - ./postgresql/data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=hoteltp
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=sudoku123456789

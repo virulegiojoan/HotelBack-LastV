@@ -1,0 +1,15 @@
+Flask
+Flask-SQLAlchemy
+Flask-Marshmallow
+marshmallow-sqlalchemy
+psycopg2-binary
+Marshmallow
+blueprint
+pyJWT==2.10.1
+SQLAlchemy
+requests
+Flask-Bcrypt
+Flask-Cors
+bcrypt
+python-dotenv
+gunicorn
